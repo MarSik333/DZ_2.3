@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <Main>
+        <div class="container">
+
+            <div class="item-one">
+                <h1>Введіть свій вік (а я скажу ви нормальний, чи дитина.):</h1>
+                <input type="text" id="ageInput">
+                <button onclick="calculateAge()">Визначити</button>
+                <p id="result1"></p>
+            </div>
+
+            <div class="item-two">
+                <h1>Введіть число від 0 до 9 (покажу які символи на цій клавіші):</h1>
+                <input type="text" id="numberInput">
+                <button onclick="calculateSymbol()">Визначити</button>
+                <p id="result2"></p>
+            </div>
+
+            <div class="item-three">
+                <h1>Введіть діапазон чисел(покажу сумму чисел в цьому діапазоні):</h1>
+                <p>Початкове число: <input type="text" id="startInput"></p>
+                <p>Кінцеве число: <input type="text" id="endInput"></p>
+                <button onclick="calculateSum()">Підрахувати</button>
+                <p id="result3"></p>
+            </div>
+
+            <div class="item-four">
+                <h1>Введіть два числа (покажу найбільший спільний дільник):</h1>
+                <p>Перше число: <input type="text" id="num1"></p>
+                <p>Друге число: <input type="text" id="num2"></p>
+                <button onclick="findGCD()">Знайти найбільший спільний дільник</button>
+                <p id="result4"></p>
+            </div>
+
+            <div class="item-5">
+                <h1>Введіть число:</h1>
+                <p><input type="text" id="number"></p>
+                <button onclick="findDivisors()">Знайти всі дільники</button>
+                <p id="result5"></p>
+            </div>
+
+            <div class="item-6">
+                <h1>Введіть п'ятирозрядне число:</h1>
+                <p><input type="text" id="number5"></p>
+                <button onclick="checkPalindrome()">Перевірити</button>
+                <p id="result6"></p>
+            </div>
+
+            <div class="item-7">
+                <h1>Сума до оплати зі знижкою</h1>
+                <label for="purchaseAmount">Введіть суму покупки: </label>
+                <input type="number" id="purchaseAmount">
+                <button onclick="calculateDiscount()">Розрахувати знижку</button>
+                <p id="result7"></p>
+            </div>
+
+
+            <div class="item-8">
+                <h1>Статистика чисел</h1>
+                <label for="numbers">Введіть 10 чисел через кому: </label>
+                <input type="text" id="numbers">
+                <button onclick="calculateStats()">Розрахувати статистику</button>
+                <p id="result8"></p>
+            </div>
+
+
+            <div class="game-n">
+                <button onclick="guessNumber()">Вгадаю число (сподіваюсь)</button>
+            </div>
+        </div>
+    </Main>
+<script src="script.js"></script>
+</body>
+</html>
